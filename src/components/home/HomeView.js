@@ -36,6 +36,7 @@ class Home extends Component {
 
 	appendMessage() {
 		const message = document.getElementById('form-message');
+		console.log(message);
 		const update = this.state.conversation.push({
 			styling: 'user',
 			chat: message.value
