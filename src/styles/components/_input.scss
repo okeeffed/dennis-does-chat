@@ -1,6 +1,10 @@
 .input-set {
 	height: 200px;
 
+	.error-message {
+		opacity: 0;
+	}
+
 	.label {
 		display: block;
 
