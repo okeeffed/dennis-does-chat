@@ -6,8 +6,8 @@ class ChatBubble extends Component {
 	render() {
 		return (
 			<div className="chat-bubble item -twelve">
-				<div className={`reply ${this.props.styling}`}>
-					<p>ChatBubble</p>
+				<div className={`${this.props.styling}`}>
+					<p className="reply">ChatBubble</p>
 				</div>
 			</div>
 		);
