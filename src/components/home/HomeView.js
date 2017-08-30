@@ -28,10 +28,9 @@ class Home extends Component {
 
 	appendMessage() {
 		const message = document.getElementById('form-message');
-		console.log(message);
 		const update = this.state.conversation.push({
 			styling: 'user',
-			chat: 'test'
+			chat: message.value
 		});
 
 		this.setState({
@@ -41,8 +40,9 @@ class Home extends Component {
 	}
 
 	appendConversation() {
-		return this.state.conversation.map(data => {
+		return this.state.conversation.map((data, index) => {
 			return (<ChatBubble
+						key={index}
 						styling={data.styling}
 						chat={data.chat}
 					/>);
