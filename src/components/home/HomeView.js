@@ -67,6 +67,7 @@ class Home extends Component {
 						conversation: update,
 						...this.state
 					});
+					convo.scrollTop = convo.scrollHeight;
 				});
 				return res.data;
 			})
