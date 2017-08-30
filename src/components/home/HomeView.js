@@ -61,7 +61,7 @@ class Home extends Component {
 					console.log(message);
 					const update = this.state.conversation.push({
 						styling: 'bot',
-						chat: message.text
+						chat: message.text[0].speech
 					});
 
 					this.setState({
