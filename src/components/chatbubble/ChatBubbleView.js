@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class ChatBubble extends Component {
 	render() {
 		return (
-			<div className="chat-bubble">
+			<div className="chat-bubble item -six">
 				<p>ChatBubble</p>
 			</div>
 		);
