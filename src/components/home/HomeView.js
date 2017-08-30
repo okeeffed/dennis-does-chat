@@ -13,7 +13,13 @@ class Home extends Component {
 		super();
 
 		this.state = {
-			conversation: []
+			conversation: [],
+			replies: [
+				{ reply: 'Hello'},
+				{ reply: 'How are you?'},
+				{ reply: 'Tell me something cool'},
+				{ reply: 'Show me some work'}
+			];
 		};
 	}
 	componentDidMount() {
@@ -80,8 +86,7 @@ class Home extends Component {
 				res.data.map(message => {
 
 					message.data.map(res => {
-							console.log(res);
-							const update = this.state.conversation.push({
+						const update = this.state.conversation.push({
 							styling: 'bot',
 							chat: res.type === 0 ? res.speech : res.payload.speech
 						});
@@ -91,6 +96,12 @@ class Home extends Component {
 							...this.state
 						});
 						convo.scrollTop = convo.scrollHeight;
+
+						if (res.type === 4) {
+							this.setState({
+								replies: res.payload.quickReplies
+							});
+						}
 					});
 				});
 				return res.data;
