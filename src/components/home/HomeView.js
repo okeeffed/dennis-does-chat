@@ -11,11 +11,15 @@ class Home extends Component {
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
 			console.log('PREVENTED');
+			this.appendMessages();
 		});
 	}
 
 	appendMessages() {
-		const convo = document.querySeletor('conversation-wrapper');
+		const convo = document.querySelector('conversation-wrapper');
+		console.log(convo);
+		console.log(convo.scrollTop);
+		console.log(convo.scrollHeight);
 		convo.scrollTop = convo.scrollHeight;
 	}
 
