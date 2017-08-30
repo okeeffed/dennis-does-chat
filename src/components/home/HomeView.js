@@ -14,12 +14,12 @@ class Home extends Component {
 
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
-			console.log('PREVENTED');
 			this.appendMessagesTo(convo);
 		});
 	}
 
 	appendMessagesTo(convo) {
+		`<ChatBubble styling="bot" chat="${convo.value}" />`
 		convo.scrollTop = convo.scrollHeight;
 	}
 
