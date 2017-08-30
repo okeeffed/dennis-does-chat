@@ -1,5 +1,5 @@
-var fs = require('fs');
-var dotenv = require('dotenv').config;
+import fs from 'fs';
+import { config } from 'dotenv';
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
