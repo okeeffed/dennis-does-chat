@@ -2,19 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 /* user imports */
-
-class Master extends Component {
+class ChatBubble extends Component {
 	render() {
 		return (
-			<div className="master">
-				{ this.props.children }
+			<div className="chat-bubble">
+				<p>ChatBubble</p>
 			</div>
 		);
 	}
 }
 
-Master.propTypes = {
+ChatBubble.propTypes = {
 	example: PropTypes.string
 }
 
-export default Master;
+export default ChatBubble;

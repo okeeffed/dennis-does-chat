@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Master from '../master/Master';
 /* user imports */
-// import Data from './Home.json';
+import ChatBubble from '../chatbubble/ChatBubble';
+import QuickReply from '../quickreply/QuickReply';
 
 class Home extends Component {
 	render() {

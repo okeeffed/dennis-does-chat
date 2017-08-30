@@ -3,18 +3,19 @@ import PropTypes from 'prop-types';
 
 /* user imports */
 
-class Master extends Component {
+class QuickReply extends Component {
 	render() {
 		return (
-			<div className="master">
-				{ this.props.children }
+			<div>
+				<h1>Ready to roll!</h1>
+				<h2>Time to write some Redux</h2>
 			</div>
 		);
 	}
 }
 
-Master.propTypes = {
+QuickReply.propTypes = {
 	example: PropTypes.string
 }
 
-export default Master;
+export default QuickReply;
