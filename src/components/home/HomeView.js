@@ -51,7 +51,7 @@ class Home extends Component {
 					<h1 className="title">Dennis does chat</h1>
 					<div className="chat">
 						<Conversation>
-
+							{ this.appendConversation() }
 						</Conversation>
 						<div className="cta">style
 							<div className="message">

@@ -8,36 +8,48 @@
 		"chat": "Bot chat"
 	},
 	{
-		"styling": "bot",
-		"chat": "Bot chat"
+		"styling": "user",
+		"chat": "User chat"
 	},
 	{
 		"styling": "bot",
 		"chat": "Bot chat"
 	},
 	{
-		"styling": "bot",
-		"chat": "Bot chat"
+		"styling": "user",
+		"chat": "User chat"
 	},
 	{
 		"styling": "bot",
 		"chat": "Bot chat"
 	},
 	{
-		"styling": "bot",
-		"chat": "Bot chat"
+		"styling": "user",
+		"chat": "User chat"
 	},
 	{
 		"styling": "bot",
 		"chat": "Bot chat"
 	},
 	{
-		"styling": "bot",
-		"chat": "Bot chat"
+		"styling": "user",
+		"chat": "User chat"
 	},
 	{
 		"styling": "bot",
 		"chat": "Bot chat"
+	},
+	{
+		"styling": "user",
+		"chat": "User chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "user",
+		"chat": "User chat"
 	},
 	{
 		"styling": "bot",
