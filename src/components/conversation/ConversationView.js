@@ -22,7 +22,7 @@ class Conversation extends Component {
 					<ChatBubble styling="user" />
 					<ChatBubble styling="bot" />
 					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
+					<ChatBubble styling="bot" chat="Bottom" />
 				</div>
 			</div>
 		);

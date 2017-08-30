@@ -7,7 +7,7 @@ class ChatBubble extends Component {
 		return (
 			<div className="chat-bubble item -twelve">
 				<div className={`${this.props.styling} e-raised`}>
-					<p className="reply">ChatBubble</p>
+					<p className="reply">{ this.props.chat ? this.props.chat : 'ChatBubble'}</p>
 				</div>
 			</div>
 		);
