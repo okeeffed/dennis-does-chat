@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class QuickReply extends Component {
 	render() {
 		return (
-			<div className="quick-reply item">
+			<div className="quick-reply item -six">
 				<p>Button option</p>
 			</div>
 		);
