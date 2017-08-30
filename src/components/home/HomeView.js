@@ -58,7 +58,7 @@ class Home extends Component {
 		convo.scrollTop = convo.scrollHeight;
 
 		// Go to bot to get reply
-		axios.post(`${process.env.CHAT_URL}/webhook`, { message: message })
+		axios.post(`${process.env.CHAT_URL}`, { message: message })
 			.then(res => {
 				console.log(res.data);
 				return res.data;
