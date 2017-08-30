@@ -40,8 +40,8 @@
 			}
 		}
 
-		&:placeholder {
-			color: $c-white;
+		&::-webkit-input-placeholder { /* Chrome */
+			color: red;
 		}
 	}
 }
