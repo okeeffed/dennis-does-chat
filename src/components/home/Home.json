@@ -1,8 +1,46 @@
 [
 	{
-		"key": "value"
+		"styling": "user",
+		"chat": "User chat"
 	},
 	{
-		"key": "value"
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
+	},
+	{
+		"styling": "bot",
+		"chat": "Bot chat"
 	}
 ]
