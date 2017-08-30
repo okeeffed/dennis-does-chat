@@ -1,13 +1,11 @@
 .chat-bubble {
-	background-color: $c-blue;
-
 	.bot,
 	.user {
 
 	}
 
 	.bot {
-		float: right;
+		background-color: $c-blue;
 
 		> .reply {
 			text-align: right;
