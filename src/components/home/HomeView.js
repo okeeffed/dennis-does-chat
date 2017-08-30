@@ -42,7 +42,7 @@ class Home extends Component {
 		});
 
 		this.setState({
-			conversation: update,
+			conversation: [],
 			...this.state
 		});
 
