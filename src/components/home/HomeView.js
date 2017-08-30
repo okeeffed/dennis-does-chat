@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Master from '../master/Master';
 /* user imports */
 import QuickReply from '../quickreply/QuickReply';
+import Conversation from '../conversation/Conversation';
 
 class Home extends Component {
 	render() {
