@@ -118,15 +118,15 @@ class Home extends Component {
 		});
 	}
 
-	renderConversation() {
-		return this.state.replies.map((data, index) => {
-			return (<ChatBubble
-						key={index}
-						styling={data.styling}
-						chat={data.chat}
-					/>);
-		});
-	}
+	// renderConversation() {
+	// 	return this.state.replies.map((data, index) => {
+	// 		return (<ChatBubble
+	// 					key={index}
+	// 					styling={data.styling}
+	// 					chat={data.chat}
+	// 				/>);
+	// 	});
+	// }
 
 	render() {
 		return (
