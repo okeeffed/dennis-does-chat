@@ -7,6 +7,9 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	body {
+		min-height: 490px;
+	}
 
 	background-color: $c-blue;
 
