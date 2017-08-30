@@ -10,7 +10,7 @@
 	border-radius: 4px;
 
 	@include grid-media($mobile) {
-		height: 30px;
+		height: 40px;
 	}
 
 	> .link {
