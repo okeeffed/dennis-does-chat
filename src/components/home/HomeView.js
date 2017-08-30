@@ -4,6 +4,7 @@ import Master from '../master/Master';
 /* user imports */
 import QuickReply from '../quickreply/QuickReply';
 import Conversation from '../conversation/Conversation';
+import ChatBubble from '../chatbubble/ChatBubble';
 
 class Home extends Component {
 	componentDidMount() {
