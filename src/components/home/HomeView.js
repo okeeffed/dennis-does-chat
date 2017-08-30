@@ -9,6 +9,8 @@ import data from './Home.json';
 
 class Home extends Component {
 	constructor(props) {
+		super();
+
 		this.state = {
 			conversation: data
 		};
@@ -32,6 +34,8 @@ class Home extends Component {
 
 		convo.scrollTop = convo.scrollHeight;
 	}
+
+
 
 	render() {
 		return (
