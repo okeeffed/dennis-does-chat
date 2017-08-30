@@ -8,8 +8,6 @@ import Conversation from '../conversation/Conversation';
 import ChatBubble from '../chatbubble/ChatBubble';
 import data from './Home.json';
 
-require('dotenv').config;
-
 class Home extends Component {
 	constructor(props) {
 		super();
@@ -57,7 +55,7 @@ class Home extends Component {
 		convo.scrollTop = convo.scrollHeight;
 
 		// Go to bot to get reply
-		axios.post(`${process.env.REACT_APP_CHAT_URL}`, { message: message })
+		axios.post('http://localhost:3090/webhook', { message: message })
 			.then(res => {
 				console.log(res.data);
 				return res.data;
