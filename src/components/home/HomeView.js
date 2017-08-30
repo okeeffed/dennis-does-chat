@@ -7,7 +7,7 @@ import Conversation from '../conversation/Conversation';
 
 class Home extends Component {
 	componentWillMount() {
-		const form = document.getElementById('form')
+		const form = document.getElementById('form');
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
 			console.log('PREVENTED');
