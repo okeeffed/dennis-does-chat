@@ -33,7 +33,7 @@ class Home extends Component {
 							<div className="message">
 								<form action="#" id="form" className="form" name="entry" method="post">
 									<span className="input-set">
-										<label className="label" htmlFor="form-message">Mobile</label>
+										<label className="label" htmlFor="form-message">Messages</label>
 										<input id="form-message" className="input" type="text" name="phone" title="phone" placeholder="Enter message" />
 										<span className="error-message">Please enter a valid message</span>
 									</span>
