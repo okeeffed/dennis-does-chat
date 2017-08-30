@@ -102,6 +102,10 @@ class Home extends Component {
 							this.setState({
 								replies: res.payload.quickReplies
 							});
+						} else {
+							this.setState({
+								replies: []
+							});
 						}
 					});
 				});
