@@ -181,14 +181,14 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  color: red;
+  color: $c-red;
 }
 input:-moz-placeholder {
-  color: red;
+ color: $c-red;
 }
 input::-moz-placeholder {
-  color: red;
+ color: $c-red;
 }
 input:-ms-input-placeholder {
-  color: red;
+ color: $c-red;
 }
