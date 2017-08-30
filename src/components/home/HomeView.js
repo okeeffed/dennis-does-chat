@@ -9,8 +9,23 @@ class Home extends Component {
 	render() {
 		return (
 			<Master>
-				<div className="home">
+				<div className="home container">
 					<h1>Dennis does chat</h1>
+					<div className="chat">
+						<div className="conversation">
+							<ChatBubble />
+							<ChatBubble />
+						</div>
+						<div className="cta">
+							<div className="message"></div>
+							<div className="quick-replies">
+								<QuickReply></QuickReply>
+								<QuickReply></QuickReply>
+								<QuickReply></QuickReply>
+								<QuickReply></QuickReply>
+							</div>
+						</div>
+					</div>
 				</div>
 			</Master>
 		);
