@@ -176,9 +176,18 @@ code {
 	white-space: pre-wrap !important;
 }
 
-input::-webkit-input-placeholder{
+::-webkit-input-placeholder {
     color:red;
 }
-input:-moz-placeholder {
+
+::-moz-placeholder {
+    color:red;
+}
+
+::-ms-placeholder {
+    color:red;
+}
+
+::placeholder {
     color:red;
 }
