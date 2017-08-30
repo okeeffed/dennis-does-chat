@@ -4,6 +4,10 @@ html {
   background-color: $c-blue;
 }
 
+body {
+	min-height: 490px;
+}
+
 .container {
 	width: 100%;
 	max-width: $max-width;
