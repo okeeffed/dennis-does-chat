@@ -90,19 +90,12 @@
 		@include grid-media($mobile) {
 			@include grid-column(4);
 
-			&.-one,
-			&.-two,
-			&.-three,
-			&.-four,
-			&.-five,
-			&.-six,
-			&.-seven,
-			&.-eight,
-			&.-nine,
-			&.-ten,
-			&.-eleven,
-			&.-twelve, {
+			&.-six {
 				@include grid-column(2);
+			}
+
+			&.-twelve {
+				@include grid-column(4);
 			}
 		}
 	}
