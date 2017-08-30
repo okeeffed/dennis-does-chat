@@ -22,12 +22,13 @@ class Home extends Component {
 
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
-			this.appendMessagesTo(convo);
+			this.appendMessage();
 		});
 	}
 
-	appendMessagesTo(convo) {
-		console.log(convo);
+	appendMessagesTo() {
+		const message = document.getElementById('form-message');
+		console.log(message);
 		const update = this.state.conversation.push({
 			styling: 'user',
 			chat: convo.value
