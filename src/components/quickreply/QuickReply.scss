@@ -12,5 +12,9 @@
 	> .link {
 		@include f-primary-semibold;
 		font-size: 1.6rem;
+
+		@include grid-media($mobile) {
+			font-size: 1.2rem;
+		}
 	}
 }
