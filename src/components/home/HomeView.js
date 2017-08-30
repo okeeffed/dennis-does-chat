@@ -13,7 +13,7 @@ class Home extends Component {
 		super();
 
 		this.state = {
-			conversation: [];
+			conversation: []
 		};
 	}
 	componentDidMount() {
