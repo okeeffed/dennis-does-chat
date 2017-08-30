@@ -1,9 +1,7 @@
 .chat-bubble {
 	.bot,
 	.user {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin: 0;
 		padding: 8px;
 
 		border-radius: 4px;
