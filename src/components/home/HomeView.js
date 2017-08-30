@@ -10,6 +10,7 @@ class Home extends Component {
 		const form = document.getElementById('form');
 		const convo = document.querySelector('.conversation-wrapper');
 		convo.scrollTop = convo.scrollHeight;
+
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
 			console.log('PREVENTED');
