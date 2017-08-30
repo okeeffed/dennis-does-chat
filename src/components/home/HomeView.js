@@ -24,6 +24,14 @@ class Home extends Component {
 			e.preventDefault();
 			this.appendMessage();
 		});
+
+		const quickReplies = document.querySelectorAll('.quick-reply');
+		quickReplies.forEach((el, i) => {
+			el.addEventListener('click', (e) => {
+				e.preventDefault();
+				this.appendQuickReply(el);
+			});
+		});
 	}
 
 	appendMessage() {
@@ -39,6 +47,23 @@ class Home extends Component {
 		});
 
 		message.value = '';
+
+		// Scroll back to bottom
+		const convo = document.querySelector('.conversation-wrapper');
+		convo.scrollTop = convo.scrollHeight;
+	}
+
+	appendQuickReply(el) {
+		const message = el.querySelector('.link');
+		const update = this.state.conversation.push({
+			styling: 'user',
+			chat: message.innerHtml
+		});
+
+		this.setState({
+			conversation: update,
+			...this.state
+		});
 
 		// Scroll back to bottom
 		const convo = document.querySelector('.conversation-wrapper');
