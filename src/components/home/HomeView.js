@@ -16,7 +16,7 @@ class Home extends Component {
 	}
 
 	appendMessages() {
-		const convo = document.querySelector('conversation-wrapper');
+		const convo = document.querySelector('.conversation-wrapper');
 		console.log(convo);
 		console.log(convo.scrollTop);
 		console.log(convo.scrollHeight);
