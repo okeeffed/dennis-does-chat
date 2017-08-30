@@ -28,7 +28,7 @@ class Home extends Component {
 
 	appendMessagesTo(convo) {
 		this.setState({
-			conversation: this.state.data.push({
+			conversation: this.state.conversation.push({
 				styling: 'user',
 				chat: convo.value
 			})
