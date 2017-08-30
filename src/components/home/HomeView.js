@@ -84,7 +84,6 @@ class Home extends Component {
 		axios.post('http://localhost:3090/webhook', { message: message })
 			.then(res => {
 				res.data.map(message => {
-
 					message.data.map(res => {
 						const update = this.state.conversation.push({
 							styling: 'bot',
