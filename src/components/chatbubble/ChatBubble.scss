@@ -18,5 +18,10 @@
 
 	.user {
 		float: left;
+		background-color: $c-white;
+
+		> .reply {
+			text-align: left;
+		}
 	}
 }
