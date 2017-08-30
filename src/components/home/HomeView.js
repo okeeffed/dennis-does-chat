@@ -8,18 +8,16 @@ import Conversation from '../conversation/Conversation';
 class Home extends Component {
 	componentDidMount() {
 		const form = document.getElementById('form');
+		const convo = document.querySelector('.conversation-wrapper');
+		convo.scrollTop = convo.scrollHeight;
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
 			console.log('PREVENTED');
-			this.appendMessages();
+			this.appendMessagesTo(convo);
 		});
 	}
 
-	appendMessages() {
-		const convo = document.querySelector('.conversation-wrapper');
-		console.log(convo);
-		console.log(convo.scrollTop);
-		console.log(convo.scrollHeight);
+	appendMessagesTo(convo) {
 		convo.scrollTop = convo.scrollHeight;
 	}
 
