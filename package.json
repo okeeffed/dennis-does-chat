@@ -35,13 +35,13 @@
   },
   "scripts": {
     "start-js": "react-scripts start",
-	"start": "gulp styles && npm-run-all -p start-js",
-	"build": "gulp styles && react-scripts build",
-	"test": "react-scripts test --env=jsdom",
-	"mocha": "mocha --recursive ./src/components/**/*.mocha.js",
-	"eject": "react-scripts eject",
-	"deploy": "gulp styles && gulp dato && react-scripts build && now --alias dennis-does-chat",
-	"surge": "gulp styles && react-scripts build && surge build/ dennis-does-chat.surge.sh"
+    "start": "gulp styles && npm-run-all -p start-js",
+    "build": "gulp styles && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "mocha": "mocha --recursive ./src/components/**/*.mocha.js",
+    "eject": "react-scripts eject",
+    "deploy": "gulp styles && gulp dato && react-scripts build && now --alias dennis-does-chat",
+    "surge": "gulp styles && react-scripts build && surge build/ dennis-does-chat.surge.sh"
   },
   "devDependencies": {
     "chalk": "^2.1.0",

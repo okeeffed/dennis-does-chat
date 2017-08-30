@@ -35,10 +35,11 @@ class Home extends Component {
 	}
 
 	appendMessage() {
-		const message = document.getElementById('form-message');
+		const messageObj = document.getElementById('form-message');
+		const message = messageObj.value;
 		const update = this.state.conversation.push({
 			styling: 'user',
-			chat: message.value
+			chat: message
 		});
 
 		this.setState({
@@ -46,13 +47,24 @@ class Home extends Component {
 			...this.state
 		});
 
-		message.value = '';
+		messageObj.value = '';
 
 		// Scroll back to bottom
 		const convo = document.querySelector('.conversation-wrapper');
 		convo.scrollTop = convo.scrollHeight;
 
 		// Go to bot to get reply
+		axios.post(`${process.env.CHAT_URL}/webhook`, {
+					message: message
+				})
+				.then(res => {
+					console.log(res.data);
+					return res.data;
+				})
+				.catch(err => {
+					console.log(err.message);
+					throw err;
+				});
 	}
 
 	appendQuickReply(el) {
