@@ -58,7 +58,7 @@ class Home extends Component {
 		console.log(message.innerText);
 		const update = this.state.conversation.push({
 			styling: 'user',
-			chat: message.innerHtml
+			chat: message.innerText
 		});
 
 		this.setState({
