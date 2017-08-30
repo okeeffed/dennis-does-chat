@@ -98,6 +98,7 @@ class Home extends Component {
 						convo.scrollTop = convo.scrollHeight;
 
 						if (res.type === 4) {
+							console.log(res.payload.quickReplies);
 							this.setState({
 								replies: res.payload.quickReplies
 							});
