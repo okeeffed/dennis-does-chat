@@ -8,8 +8,8 @@ class Conversation extends Component {
 	render() {
 		return (
 			<div className="conversation grid grid-container">
-				<ChatBubble />
-				<ChatBubble />
+				<ChatBubble styling="user" />
+				<ChatBubble styling="bot" />
 			</div>
 		);
 	}
