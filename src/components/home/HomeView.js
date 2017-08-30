@@ -113,7 +113,7 @@ class Home extends Component {
 					<h1 className="title">Dennis does chat</h1>
 					<div className="chat">
 						<Conversation>
-							{ this.appendConversation() }
+							{ this.state.conversation && this.appendConversation() }
 						</Conversation>
 						<div className="cta">
 							<div className="message">
