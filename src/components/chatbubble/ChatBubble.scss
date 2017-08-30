@@ -1,7 +1,6 @@
 .chat-bubble {
 	.bot,
 	.user {
-		margin: 0;
 		padding: 8px;
 
 		border-radius: 4px;
@@ -12,6 +11,8 @@
 		background-color: $c-blue;
 
 		> .reply {
+			margin: 0;
+
 			color: $c-white;
 			text-align: right;
 		}
