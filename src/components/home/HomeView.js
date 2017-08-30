@@ -27,7 +27,7 @@ class Home extends Component {
 	}
 
 	appendMessagesTo(convo) {
-		console.log(convo.value);
+		console.log(convo);
 		const update = this.state.conversation.push({
 			styling: 'user',
 			chat: convo.value
