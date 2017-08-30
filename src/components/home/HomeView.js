@@ -75,10 +75,7 @@ class Home extends Component {
 								</form>
 							</div>
 							<div className="quick-replies grid grid-container">
-								<QuickReply></QuickReply>
-								<QuickReply></QuickReply>
-								<QuickReply></QuickReply>
-								<QuickReply></QuickReply>
+
 							</div>
 						</div>
 					</div>
