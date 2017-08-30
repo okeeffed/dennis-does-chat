@@ -1,6 +1,11 @@
 .chat-bubble {
 	background-color: $c-blue;
 
+	.bot,
+	.user {
+
+	}
+
 	.bot {
 		float: right;
 
