@@ -53,7 +53,7 @@ class Home extends Component {
 						<Conversation>
 							{ this.appendConversation() }
 						</Conversation>
-						<div className="cta">style
+						<div className="cta">
 							<div className="message">
 								<form action="#" id="form" className="form" name="entry" method="post">
 									<span className="input-set">
