@@ -39,6 +39,10 @@ class Home extends Component {
 		});
 
 		message.value = '';
+
+		// Scroll back to bottom
+		const convo = document.querySelector('.conversation-wrapper');
+		convo.scrollTop = convo.scrollHeight;
 	}
 
 	appendConversation() {
