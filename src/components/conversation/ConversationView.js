@@ -9,20 +9,7 @@ class Conversation extends Component {
 		return (
 			<div className="conversation-wrapper">
 				<div className="conversation grid grid-container">
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" />
-					<ChatBubble styling="user" />
-					<ChatBubble styling="bot" chat="Bottom" />
+					{ this.props.children }
 				</div>
 			</div>
 		);
