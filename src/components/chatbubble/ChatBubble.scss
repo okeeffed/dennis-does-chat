@@ -13,7 +13,6 @@
 
 		> .reply {
 			color: $c-white;
-			text-align: right;
 
 			@include grid-media($mobile) {
 				font-size: 1.2rem;
