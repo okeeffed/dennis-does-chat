@@ -6,6 +6,11 @@
 .grid {
 	max-width: $max-width;
 
+	&.quick-replies {
+		box-sizing: border-box;
+		padding: 10px;
+	}
+
 	// Item
 	> .item {
 		margin-bottom: 10px;
