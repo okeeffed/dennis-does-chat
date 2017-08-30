@@ -6,7 +6,7 @@ import QuickReply from '../quickreply/QuickReply';
 import Conversation from '../conversation/Conversation';
 
 class Home extends Component {
-	componentWillMount() {
+	componentDidMount() {
 		const form = document.getElementById('form');
 		form.addEventListener('submit', (e) => {
 			e.preventDefault();
