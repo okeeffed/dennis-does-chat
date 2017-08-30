@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 /* user imports */
 import ChatBubble from '../chatbubble/ChatBubble';
 import Conversation from '../conversation/Conversation';
+
 class Conversation extends Component {
 	render() {
 		return (
