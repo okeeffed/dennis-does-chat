@@ -51,6 +51,8 @@ class Home extends Component {
 		// Scroll back to bottom
 		const convo = document.querySelector('.conversation-wrapper');
 		convo.scrollTop = convo.scrollHeight;
+
+		// Go to bot to get reply
 	}
 
 	appendQuickReply(el) {
