@@ -27,12 +27,12 @@ class Home extends Component {
 	}
 
 	appendMessagesTo(convo) {
-		const el = this.render(`<ChatBubble styling="bot" chat="${convo.value}" />`);
-		let parent = document.createElement('div');
-		parent.innerHTML = el;
-		convo.appendChild(parent.firstChild);
-
-		convo.scrollTop = convo.scrollHeight;
+		this.setState({
+			conversation: this.state.data.push({
+				styling: user,
+				chat: convo.value
+			})
+		})
 	}
 
 	appendConversation() {
