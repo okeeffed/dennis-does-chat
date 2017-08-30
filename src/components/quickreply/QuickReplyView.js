@@ -7,7 +7,7 @@ class QuickReply extends Component {
 	render() {
 		return (
 			<div className="quick-reply item -six e-raised">
-				<p>Button option</p>
+				<a>{this.props.children}</a>
 			</div>
 		);
 	}
