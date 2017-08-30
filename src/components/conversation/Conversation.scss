@@ -1,8 +1,11 @@
 .conversation-wrapper {
 	flex: 5;
 	box-sizing: border-box;
-	justify-content: flex-end;
 
 	padding: 10px;
 	background-color: green;
+
+	.conversation {
+		align-self: flex-end;
+	}
 }
