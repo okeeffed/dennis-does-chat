@@ -36,7 +36,6 @@ class Home extends Component {
 
 	appendMessage() {
 		const message = document.getElementById('form-message');
-		console.log(message);
 		const update = this.state.conversation.push({
 			styling: 'user',
 			chat: message.value
@@ -56,6 +55,7 @@ class Home extends Component {
 
 	appendQuickReply(el) {
 		const message = el.querySelector('.link');
+		console.log(message);
 		const update = this.state.conversation.push({
 			styling: 'user',
 			chat: message.innerHtml
