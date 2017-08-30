@@ -112,8 +112,14 @@ class Home extends Component {
 			});
 	}
 
-	appendConversation() {
+	renderConversation() {
 		return this.state.conversation.map((data, index) => {
+			return (<QuickReply key={`reply-${index}`}>{data.reply}</QuickReply>);
+		});
+	}
+
+	renderQuickReplies() {
+		return this.state.replies.map((data, index) => {
 			return (<ChatBubble
 						key={index}
 						styling={data.styling}
@@ -129,7 +135,7 @@ class Home extends Component {
 					<h1 className="title">Dennis does chat</h1>
 					<div className="chat">
 						<Conversation>
-							{ this.state.conversation && this.appendConversation() }
+							{ this.state.conversation && this.renderConversation() }
 						</Conversation>
 						<div className="cta">
 							<div className="message">
