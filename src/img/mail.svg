@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-832.000000, -2533.000000)">
+            <g id="mail" transform="translate(832.000000, 2533.000000)">
+                <circle id="Oval-1-Copy-6" fill="#000000" cx="35" cy="35" r="35"></circle>
+                <path d="M28,35.8203887 L31.1431458,38.9664866 L32.1721174,40.0039621 C33.7339138,41.5786659 36.267466,41.5772747 37.8278826,40.0039621 L38.868272,38.9779987 L42,35.8203887 L54.0899658,48 L15.9100342,48 L28,35.8203887 Z M15.7071068,22 L54.2928932,22 L39.5,36.9151485 L37.1210447,39.3050714 C35.949865,40.4859303 34.0503759,40.4861732 32.8789553,39.3050714 L30.5,36.9064553 L15.7071068,22 Z M55,22.7129506 L55,47.5019254 L42.7071068,35.107438 L55,22.7129506 Z M15,22.7129506 L27.2928932,35.107438 L15,47.5019254 L15,22.7129506 Z" id="Envelope" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

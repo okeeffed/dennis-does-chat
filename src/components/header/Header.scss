@@ -1,0 +1,44 @@
+header {
+	display: flex;
+	justify-content: center;
+	height: 60px;
+
+	background-color: $c-black;
+  	color: $c-white;
+
+	img {
+		display: block;
+		height: auto;
+		max-width: 150px;
+
+		padding: 50px 0;
+	}
+
+	.section {
+		height: 100%;
+		flex: 1;
+
+		&.left,
+		&.right {
+			flex: 2;
+			padding: 0 10px;
+		}
+
+		.link,
+		.title {
+			font-size: 1.8rem;
+			line-height: 60px;
+		}
+
+		.title {
+			text-align: center;
+		}
+
+		.link {
+			flex: 1;
+			float: right;
+
+			padding: 0 10px;
+		}
+	}
+}

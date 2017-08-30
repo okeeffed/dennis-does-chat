@@ -1,0 +1,16 @@
+body,
+html {
+  @include reset-box-model;
+}
+
+.container {
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+
+	position: relative;
+}
+
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}

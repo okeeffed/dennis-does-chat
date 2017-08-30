@@ -1,0 +1,32 @@
+.show {
+	.heading {
+		margin-bottom: 4px;
+
+		@include f-primary-bold;
+		font-size: 1.8rem;
+	}
+
+	.subheading {
+		display: inline-block;
+		margin-bottom: 10px;
+
+		@include f-primary-light;
+		font-size: 1.6rem;
+	}
+
+	.copy,
+	.keywords {
+		margin-bottom: 10px;
+
+		@include f-primary-regular;
+		font-size: 1.4rem;
+	}
+
+	.link {
+		display: inline-block;
+
+		@include f-primary-regular;
+		font-size: 1.4rem;
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,27 @@
+.item {
+	// border: solid $c-grey 1px;
+
+	&.-what {
+		.heading {
+			margin-bottom: 8px;
+
+			@include f-primary-semibold;
+			font-size: 1.8rem;
+		}
+
+		.copy {
+			margin-bottom: 8px;
+
+			@include f-primary-regular;
+			font-size: 1.4rem;
+		}
+	}
+
+	&.-tell {
+		height: 40px;
+	}
+
+	&.-show {
+		margin-bottom: 30px;
+	}
+}
