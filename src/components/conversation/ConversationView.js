@@ -7,7 +7,7 @@ import ChatBubble from '../chatbubble/ChatBubble';
 class Conversation extends Component {
 	render() {
 		return (
-			<div className="conversation">
+			<div className="conversation grid grid-container">
 				<ChatBubble />
 				<ChatBubble />
 			</div>
