@@ -11,6 +11,18 @@ class Conversation extends Component {
 				<div className="conversation grid grid-container">
 					<ChatBubble styling="user" />
 					<ChatBubble styling="bot" />
+					<ChatBubble styling="user" />
+					<ChatBubble styling="bot" />
+					<ChatBubble styling="user" />
+					<ChatBubble styling="bot" />
+					<ChatBubble styling="user" />
+					<ChatBubble styling="bot" />
+					<ChatBubble styling="user" />
+					<ChatBubble styling="bot" />
+					<ChatBubble styling="user" />
+					<ChatBubble styling="bot" />
+					<ChatBubble styling="user" />
+					<ChatBubble styling="bot" />
 				</div>
 			</div>
 		);
