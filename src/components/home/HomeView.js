@@ -33,7 +33,22 @@ class Home extends Component {
 				<div className="home container">
 					<h1 className="title">Dennis does chat</h1>
 					<div className="chat">
-						<Conversation />
+						<Conversation>
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" />
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" />
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" />
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" />
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" />
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" />
+							<ChatBubble styling="user" />
+							<ChatBubble styling="bot" chat="Bottom" />
+						</Conversation>
 						<div className="cta">
 							<div className="message">
 								<form action="#" id="form" className="form" name="entry" method="post">
