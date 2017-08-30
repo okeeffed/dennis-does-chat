@@ -1,0 +1,42 @@
+.input-set {
+	height: 200px;
+
+	.label {
+		display: block;
+
+		margin-bottom: 10px;
+
+		color: $c-black;
+
+		font-size: 1.5rem;
+	}
+
+	.input {
+	    padding: 0 10px;
+		margin-bottom: 10px;
+
+		border: solid 1px $c-light-grey;
+
+		background-color: $c-light-grey;
+		color: $c-black;
+
+		height: 50px;
+		width: calc(100% - 40px);
+
+		font-size: 1.7rem;
+
+		transition: all 270ms ease-out;
+
+		&.valid {
+			border: solid 1px $c-green;
+		}
+
+		&.error {
+			border: solid 1px $c-red;
+
+			& + .error-message {
+				opacity: 1;
+			}
+		}
+	}
+}
