@@ -17,11 +17,12 @@
 		border: solid 1px $c-light-grey;
 
 		background-color: $c-light-grey;
-		color: $c-black;
+		color: $c-white;
 
 		height: 50px;
 		width: 90%;
 
+		@include f-primary-regular;
 		font-size: 1.7rem;
 
 		transition: all 270ms ease-out;
