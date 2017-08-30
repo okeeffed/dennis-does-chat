@@ -27,7 +27,7 @@ app.get('*', (req, res) => {
 });
 
 // Server Setup
-const port = process.env.PORT || 80;
+const port = process.env.NODE_ENV == 'production' ? 80 : 3090;
 const server = http.createServer(app);
 server.listen(port);
 console.log('Server listening on:', port);
