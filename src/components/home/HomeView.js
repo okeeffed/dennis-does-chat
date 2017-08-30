@@ -112,13 +112,13 @@ class Home extends Component {
 			});
 	}
 
-	renderConversation() {
+	renderQuickReplies() {
 		return this.state.conversation.map((data, index) => {
 			return (<QuickReply key={`reply-${index}`}>{data.reply}</QuickReply>);
 		});
 	}
 
-	renderQuickReplies() {
+	renderConversation() {
 		return this.state.replies.map((data, index) => {
 			return (<ChatBubble
 						key={index}
