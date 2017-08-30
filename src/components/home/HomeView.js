@@ -18,7 +18,7 @@ class Home extends Component {
 								<form action="#" id="form" className="form" name="entry" method="post">
 									<span className="input-set">
 										<label className="label" for="form-message">Mobile</label>
-										<input id="form-message" className="input" type="text" name="phone" title="phone" placeholder="Enter your phone" />
+										<input id="form-message" className="input" type="text" name="phone" title="phone" placeholder="Message" />
 										<span className="error-message">Please enter a valid message</span>
 									</span>
 								</form>
