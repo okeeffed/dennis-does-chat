@@ -35,7 +35,14 @@ class Home extends Component {
 		convo.scrollTop = convo.scrollHeight;
 	}
 
-
+	appendConversation() {
+		return this.state.conversation.map(data => {
+			return (<ChatBubble
+						styling={data.styling}
+						chat={data.chat}
+					/>);
+		});
+	}
 
 	render() {
 		return (
@@ -44,20 +51,7 @@ class Home extends Component {
 					<h1 className="title">Dennis does chat</h1>
 					<div className="chat">
 						<Conversation>
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" />
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" />
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" />
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" />
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" />
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" />
-							<ChatBubble styling="user" />
-							<ChatBubble styling="bot" chat="Bottom" />
+
 						</Conversation>
 						<div className="cta">style
 							<div className="message">
