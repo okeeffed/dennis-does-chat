@@ -32,6 +32,14 @@ class Home extends Component {
 			this.appendMessage();
 		});
 
+		this.addQuickReplyEvent();
+	}
+
+	componentDidUpdate() {
+		this.addQuickReplyEvent();
+	}
+
+	addQuickReplyEvent() {
 		const quickReplies = document.querySelectorAll('.quick-reply');
 		quickReplies.forEach((el, i) => {
 			el.addEventListener('click', (e) => {
@@ -81,7 +89,7 @@ class Home extends Component {
 		convo.scrollTop = convo.scrollHeight;
 
 		// Go to bot to get reply
-		axios.post('http://localhost:3090/webhook', { message: message })
+		axios.post('https://heaps-chat.now.sh/webhook', { message: message })
 			.then(res => {
 				res.data.map(message => {
 					message.data.map(res => {
@@ -97,7 +105,6 @@ class Home extends Component {
 						convo.scrollTop = convo.scrollHeight;
 
 						if (res.type === 4) {
-							console.log(res.payload.quickReplies);
 							this.setState({
 								replies: res.payload.quickReplies
 							});
@@ -137,7 +144,7 @@ class Home extends Component {
 			<Master>
 				<div className="home container">
 					<h1 className="title">Be careful...</h1>
-					<h2 className="title">Dennis throws chat.</h2>
+					<h2 className="subtitle">Dennis throws chat.</h2>
 					<div className="chat">
 						<Conversation>
 							{ this.state.conversation && this.renderConversation() }

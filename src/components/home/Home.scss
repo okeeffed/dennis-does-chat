@@ -41,6 +41,10 @@
 	}
 
 	.quick-replies {
-		min-height: 120px;
+		min-height: 160px;
+
+		@include grid-media($mobile) {
+			min-height: 120px;
+		}
 	}
 }
