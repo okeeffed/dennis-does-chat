@@ -9,10 +9,6 @@
 
 	border-radius: 4px;
 
-	@include grid-media($mobile) {
-		height: 40px;
-	}
-
 	> .link {
 		@include f-primary-semibold;
 		font-size: 1.6rem;
