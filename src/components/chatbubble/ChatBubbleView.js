@@ -5,8 +5,10 @@ import PropTypes from 'prop-types';
 class ChatBubble extends Component {
 	render() {
 		return (
-			<div className=`chat-bubble item -twelve ${this.props.styling}`>
-				<p>ChatBubble</p>
+			<div className=`chat-bubble item -twelve`>
+				<div className=`reply ${this.props.styling}`>
+					<p>ChatBubble</p>
+				</div>
 			</div>
 		);
 	}
