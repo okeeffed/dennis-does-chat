@@ -10,8 +10,9 @@
 
 		margin-bottom: 10px;
 
-		color: $c-black;
+		color: $c-white;
 
+		@include f-primary-semibold;
 		font-size: 1.5rem;
 	}
 
