@@ -14,6 +14,11 @@ class Home extends Component {
 		});
 	}
 
+	appendMessages() {
+		const convo = document.querySeletor('conversation-wrapper');
+		convo.scrollTop = convo.scrollHeight;
+	}
+
 	render() {
 		return (
 			<Master>
