@@ -175,3 +175,10 @@ code {
 	font-size: 1.2rem;
 	white-space: pre-wrap !important;
 }
+
+input::-webkit-input-placeholder{
+    color:red;
+}
+input:-moz-placeholder {
+    color:red;
+}
