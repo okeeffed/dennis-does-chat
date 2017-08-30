@@ -5,8 +5,14 @@ import Master from '../master/Master';
 import QuickReply from '../quickreply/QuickReply';
 import Conversation from '../conversation/Conversation';
 import ChatBubble from '../chatbubble/ChatBubble';
+import data from './Home.json';
 
 class Home extends Component {
+	constructor(props) {
+		this.state = {
+			conversation: data
+		};
+	}
 	componentDidMount() {
 		const form = document.getElementById('form');
 		const convo = document.querySelector('.conversation-wrapper');
@@ -49,7 +55,7 @@ class Home extends Component {
 							<ChatBubble styling="user" />
 							<ChatBubble styling="bot" chat="Bottom" />
 						</Conversation>
-						<div className="cta">
+						<div className="cta">style
 							<div className="message">
 								<form action="#" id="form" className="form" name="entry" method="post">
 									<span className="input-set">
