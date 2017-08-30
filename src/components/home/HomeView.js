@@ -80,6 +80,7 @@ class Home extends Component {
 				res.data.map(message => {
 
 					message.data.map(res => {
+							console.log(res);
 							const update = this.state.conversation.push({
 							styling: 'bot',
 							chat: res.type === 0 ? res.speech : res.payload.speech
