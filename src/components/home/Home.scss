@@ -22,6 +22,10 @@
 
 	.cta {
 		flex: 3;
+
+		@include grid-media($mobile) {
+			flex: 2;
+		}
 	}
 
 	.message {
