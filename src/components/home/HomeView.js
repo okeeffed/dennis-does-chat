@@ -12,9 +12,7 @@ class Home extends Component {
 	constructor(props) {
 		super();
 
-		this.state = {
-			conversation: data
-		};
+		this.state = {};
 	}
 	componentDidMount() {
 		const form = document.getElementById('form');
