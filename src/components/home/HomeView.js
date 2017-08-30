@@ -50,6 +50,26 @@ class Home extends Component {
 
 		messageObj.value = '';
 
+		this.sendBot(message);
+	}
+
+	appendQuickReply(el) {
+		const messageObj = el.querySelector('.link');
+		const message = messageObj.innerText
+		const update = this.state.conversation.push({
+			styling: 'user',
+			chat: message
+		});
+
+		this.setState({
+			conversation: update,
+			...this.state
+		});
+
+		this.sendBot(message);
+	}
+
+	sendBot(message) {
 		// Scroll back to bottom
 		const convo = document.querySelector('.conversation-wrapper');
 		convo.scrollTop = convo.scrollHeight;
@@ -76,24 +96,6 @@ class Home extends Component {
 				console.log(err.message);
 				throw err;
 			});
-	}
-
-	appendQuickReply(el) {
-		const messageObj = el.querySelector('.link');
-		const message = messageObj.innerText
-		const update = this.state.conversation.push({
-			styling: 'user',
-			chat: message
-		});
-
-		this.setState({
-			conversation: update,
-			...this.state
-		});
-
-		// Scroll back to bottom
-		const convo = document.querySelector('.conversation-wrapper');
-		convo.scrollTop = convo.scrollHeight;
 	}
 
 	appendConversation() {
