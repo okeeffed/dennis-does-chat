@@ -26,7 +26,7 @@ class Home extends Component {
 		return (
 			<Master>
 				<div className="home container">
-					<h1>Dennis does chat</h1>
+					<h1 className="title">Dennis does chat</h1>
 					<div className="chat">
 						<Conversation />
 						<div className="cta">
