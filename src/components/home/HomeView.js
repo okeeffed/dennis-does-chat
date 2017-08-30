@@ -79,11 +79,11 @@ class Home extends Component {
 	}
 
 	appendQuickReply(el) {
-		const message = el.querySelector('.link');
-		console.log(message.innerText);
+		const messageObj = el.querySelector('.link');
+		const message = messageObj.innerText
 		const update = this.state.conversation.push({
 			styling: 'user',
-			chat: message.innerText
+			chat: message
 		});
 
 		this.setState({
