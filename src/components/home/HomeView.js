@@ -1,5 +1,4 @@
-import fs from 'fs';
-import { config } from 'dotenv';
+require('dotenv').config();
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -58,7 +57,7 @@ class Home extends Component {
 		convo.scrollTop = convo.scrollHeight;
 
 		// Go to bot to get reply
-		axios.post('http://localhost:3090/webhook', { message: message })
+		axios.post(`${process.env.CHAT_URL}`, { message: message })
 			.then(res => {
 				console.log(res.data);
 				return res.data;
