@@ -3,5 +3,9 @@
 
 	.bot {
 		float: right;
+
+		> .reply {
+			text-align: right;
+		}
 	}
 }
