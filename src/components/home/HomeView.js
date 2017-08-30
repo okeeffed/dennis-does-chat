@@ -15,8 +15,8 @@ class Home extends Component {
 						<Conversation />
 						<div className="cta">
 							<div className="message">
-								<form action="#" id="form" class="form" name="entry" method="post">
-									<span class="input-set">
+								<form action="#" id="form" className="form" name="entry" method="post">
+									<span className="input-set">
 										<label className="label" for="form-message">Mobile</label>
 										<input id="form-message" className="input" type="text" name="phone" title="phone" placeholder="Enter your phone" />
 										<span className="error-message">Please enter a valid message</span>
