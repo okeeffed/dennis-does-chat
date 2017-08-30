@@ -68,20 +68,10 @@
 		@include grid-media($tablet) {
 			@include grid-column(2);
 
-			&.-one,
-			&.-two,
-			&.-three,
-			&.-four {
+			&.-six {
 				@include grid-column(2);
 			}
 
-			&.-five,
-			&.-six,
-			&.-seven,
-			&.-eight,
-			&.-nine,
-			&.-ten,
-			&.-eleven,
 			&.-twelve, {
 				@include grid-column(4);
 			}
