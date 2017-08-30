@@ -136,7 +136,7 @@ class Home extends Component {
 		return (
 			<Master>
 				<div className="home container">
-					<h1 className="title">Hello, friend.</h1>
+					<h1 className="title">Dennis throws chat.</h1>
 					<div className="chat">
 						<Conversation>
 							{ this.state.conversation && this.renderConversation() }
