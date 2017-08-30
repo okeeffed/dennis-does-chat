@@ -1,4 +1,6 @@
 .home {
 	@include grid-container(800px);
 	margin: 0 auto;
+
+	height: 100vh;
 }
