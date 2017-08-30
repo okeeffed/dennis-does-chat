@@ -5,4 +5,8 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+
+	.cta {
+		flex: 3;
+	}
 }
