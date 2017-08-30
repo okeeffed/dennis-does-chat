@@ -175,20 +175,3 @@ code {
 	font-size: 1.2rem;
 	white-space: pre-wrap !important;
 }
-
-input {
-  width: 300px;
-}
-
-input::-webkit-input-placeholder {
-  color: $c-red;
-}
-input:-moz-placeholder {
- color: $c-red;
-}
-input::-moz-placeholder {
- color: $c-red;
-}
-input:-ms-input-placeholder {
- color: $c-red;
-}
