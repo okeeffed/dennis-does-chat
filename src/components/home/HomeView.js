@@ -19,7 +19,7 @@ class Home extends Component {
 				{ reply: 'How are you?'},
 				{ reply: 'Tell me something cool'},
 				{ reply: 'Show me some work'}
-			];
+			]
 		};
 	}
 	componentDidMount() {
