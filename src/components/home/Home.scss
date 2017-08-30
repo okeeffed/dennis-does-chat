@@ -6,6 +6,10 @@
 	display: flex;
 	flex-direction: column;
 
+	.chat {
+		flex: 1;
+	}
+
 	.cta {
 		flex: 3;
 	}
