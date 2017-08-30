@@ -1,3 +1,6 @@
+var fs = require('fs');
+var dotenv = require('dotenv').config;
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Master from '../master/Master';
