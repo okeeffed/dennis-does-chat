@@ -10,6 +10,10 @@
 
 	background-color: $c-blue;
 
+	.title {
+		color: $c-white;
+	}
+
 	.chat {
 		display: flex;
 		flex-direction: column;
