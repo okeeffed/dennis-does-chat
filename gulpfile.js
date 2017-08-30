@@ -110,12 +110,5 @@ gulp.task('watch', ['styles'], (done) => {
 		gitAdd.stderr.on('data', function (data) {
 			gutil.log('commit error: ', data.toString().slice(0, -1)); // Remove \n
 		});
-		runSequence('push');
-	});
-});
-
-gulp.task('push', function () {
-	git.push('origin', 'master', function (err) {
-		if (err) throw err;
 	});
 });
