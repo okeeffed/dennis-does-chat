@@ -1,6 +1,10 @@
 .item {
 	&.quick-reply {
 		height: 60px;
+
+		@include grid-media($mobile) {
+			height: 40px;
+		}
 	}
 
 	&.chat-bubble {
