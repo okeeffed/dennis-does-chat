@@ -14,7 +14,15 @@ class Home extends Component {
 					<div className="chat">
 						<Conversation />
 						<div className="cta">
-							<div className="message"></div>
+							<div className="message">
+								<form action="#" id="form" class="form" name="entry" method="post">
+									<span class="input-set">
+										<label className="label" for="form-message">Mobile</label>
+										<input id="form-message" className="input" type="text" name="phone" title="phone" placeholder="Enter your phone" />
+										<span className="error-message">Please enter a valid message</span>
+									</span>
+								</form>
+							</div>
 							<div className="quick-replies grid grid-container">
 								<QuickReply></QuickReply>
 								<QuickReply></QuickReply>
