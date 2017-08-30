@@ -18,7 +18,7 @@ class Home extends Component {
 						</div>
 						<div className="cta">
 							<div className="message"></div>
-							<div className="quick-replies">
+							<div className="quick-replies grid grid-container">
 								<QuickReply></QuickReply>
 								<QuickReply></QuickReply>
 								<QuickReply></QuickReply>
