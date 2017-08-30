@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Master from '../master/Master';
 /* user imports */
-import ChatBubble from '../chatbubble/ChatBubble';
 import QuickReply from '../quickreply/QuickReply';
 
 class Home extends Component {
@@ -12,10 +11,7 @@ class Home extends Component {
 				<div className="home container">
 					<h1>Dennis does chat</h1>
 					<div className="chat">
-						<div className="conversation">
-							<ChatBubble />
-							<ChatBubble />
-						</div>
+
 						<div className="cta">
 							<div className="message"></div>
 							<div className="quick-replies grid grid-container">
