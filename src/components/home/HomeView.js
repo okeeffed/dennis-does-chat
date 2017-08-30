@@ -31,7 +31,7 @@ class Home extends Component {
 			conversation: this.state.data.push({
 				styling: user,
 				chat: convo.value
-			})
+			});
 		})
 	}
 
