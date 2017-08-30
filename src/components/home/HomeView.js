@@ -12,7 +12,7 @@ class Home extends Component {
 				<div className="home container">
 					<h1>Dennis does chat</h1>
 					<div className="chat">
-
+						<Conversation />
 						<div className="cta">
 							<div className="message"></div>
 							<div className="quick-replies grid grid-container">
