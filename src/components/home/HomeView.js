@@ -1,5 +1,3 @@
-require('dotenv').config();
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Master from '../master/Master';
@@ -9,6 +7,8 @@ import QuickReply from '../quickreply/QuickReply';
 import Conversation from '../conversation/Conversation';
 import ChatBubble from '../chatbubble/ChatBubble';
 import data from './Home.json';
+
+require('dotenv').config();
 
 class Home extends Component {
 	constructor(props) {
