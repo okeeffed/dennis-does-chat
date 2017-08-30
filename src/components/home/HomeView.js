@@ -9,6 +9,7 @@ class Home extends Component {
 		return (
 			<Master>
 				<div className="home">
+					<h1>Dennis does chat</h1>
 				</div>
 			</Master>
 		);
