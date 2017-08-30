@@ -57,7 +57,17 @@ class Home extends Component {
 		// Go to bot to get reply
 		axios.post('http://localhost:3090/webhook', { message: message })
 			.then(res => {
-				console.log(res.data);
+				res.data.map(message => {
+					const update = this.state.conversation.push({
+						styling: 'bot',
+						chat: message.text
+					});
+
+					this.setState({
+						conversation: update,
+						...this.state
+					});
+				});
 				return res.data;
 			})
 			.catch(err => {
