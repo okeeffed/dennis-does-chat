@@ -36,7 +36,9 @@ class Home extends Component {
 		this.setState({
 			conversation: update,
 			...this.state
-		})
+		});
+
+		message.value = '';
 	}
 
 	appendConversation() {
