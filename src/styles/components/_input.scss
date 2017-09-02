@@ -26,7 +26,7 @@
 		margin-bottom: 10px;
 
 		border: none;
-		border-bottom: solid 1px darken($c-white, 30%);
+		border-bottom: solid 1px $c-white;
 
 		background-color: transparent;
 		color: $c-white;
@@ -38,6 +38,7 @@
 		font-size: 1.7rem;
 
 		transition: all 270ms ease-out;
+		opacity: 0.5;
 
 		&:active,
 		&:focus {
