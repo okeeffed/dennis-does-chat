@@ -42,7 +42,8 @@
 
 		&:active,
 		&:focus {
-			border-bottom: solid 1px $c-white;
+			// border-bottom: solid 1px $c-white;
+			opacity: 1;
 		}
 
 		&.valid {
