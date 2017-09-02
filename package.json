@@ -37,7 +37,7 @@
   "scripts": {
     "start-js": "react-scripts start",
     "start": "gulp styles && npm-run-all -p start-js",
-    "now": "now --docker -e NODE_ENV=production",
+    "now": "npm run build && now --docker -e NODE_ENV=production",
     "build": "gulp styles && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "mocha": "mocha --recursive ./src/components/**/*.mocha.js",
