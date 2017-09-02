@@ -39,6 +39,11 @@
 
 		transition: all 270ms ease-out;
 
+		&:active,
+		&:focus {
+			border-bottom: solid 1px $c-white;
+		}
+
 		&.valid {
 			border: solid 1px $c-green;
 		}
